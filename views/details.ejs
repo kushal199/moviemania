@@ -1,0 +1,63 @@
+<%- include("partials/header") -%>
+
+<div class="det_img">
+
+     <img class="w3-mobile"src="/upimg/<%= img %>" alt="">
+</div>
+
+<div class="tags w3-mobile ">
+  <h3 class="fb w3-mobile" >Title...</h3>
+
+
+</div>
+<h4 class="f untag w3-mobile"><%= name %></h4>
+
+<br>
+<div class="tags w3-mobile ">
+  <h3 class="fb" >Year...</h3>
+
+
+</div>
+<h4 class="f untag w3-mobile"><%= year %></h4>
+<br>
+<div class="tags w3-mobile ">
+  <h3 class="fb" >Summary...</h3>
+
+
+</div>
+<h5 class="f untag w3-mobile"><%= content %></h5>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button class="del"type="button" data-toggle="modal" data-target="#myModal" name="button">
+  <img src="/images/Capture.PNG" alt="">
+</button>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <center>
+          <h4 class=" fb modal-title">Delete</h4>
+            </center>
+        </div>
+        <div class="modal-body">
+          <p class="fb">Do you want to delete this movie?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" fb btn btn-danger" data-dismiss="modal">No</button>
+          <a href="/delete/<%= id %>"><button type="button" class=" fb btn btn-danger">Yes</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
